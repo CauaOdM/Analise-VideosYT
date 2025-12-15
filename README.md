@@ -13,6 +13,22 @@ Um projeto Python que automatiza a análise de vídeos do YouTube usando Intelig
 3. A IA analisa o conteúdo e gera um resumo crítico
 4. O resultado é salvo em `analise_video.md`
 
+### Interface Gráfica (GUI) ( frontend Feito com IA)
+- Arquivo: `gui.py`
+- Tema inspirado no YouTube (barra escura e acentos em vermelho)
+- Campos e ações:
+  - Campo para colar a URL do vídeo
+  - Botão "Analisar Vídeo" (executa em segundo plano para manter a UI responsiva)
+  - Barra de progresso e mensagens de status
+  - Área de texto para visualizar o resultado
+  - Botão "Salvar análise…" para exportar em `.md`
+
+Para executar a interface:
+
+```bash
+python gui.py
+```
+
 ## 📦 Dependências e Imports
 
 ### `dotenv` (load_dotenv)
@@ -65,6 +81,8 @@ Função principal que orquestra todo o fluxo: solicita URL, processa o vídeo e
    API_KEY=sua_chave_aqui
    ```
 4. Execute: `python analisador.py`
+
+Opcional (GUI): `python gui.py`
 
 ---
 
