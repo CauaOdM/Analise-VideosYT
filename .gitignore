@@ -1,2 +1,5 @@
 .env.local
 analise_video.md
+aplicação.py
+aplicação.exe
+__pycache__/
